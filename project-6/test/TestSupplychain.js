@@ -264,7 +264,7 @@ it("Testing smart contract function receiveItem() that allows a retailer to mark
 
     // Declare and Initialize a variable for event
     var eventEmitted = false
-
+    supplyChain.addRetailer(retailerID);
     // Watch the emitted event Shipped()
     var event = supplyChain.Received()
     await event.watch((err, res) => {
@@ -291,7 +291,7 @@ it("Testing smart contract function purchaseItem() that allows a consumer to pur
 
     // Declare and Initialize a variable for event
     var eventEmitted = false
-
+    supplyChain.addConsumer(consumerID);
     // Watch the emitted event Shipped()
     var event = supplyChain.Purchased()
     await event.watch((err, res) => {
@@ -310,8 +310,8 @@ it("Testing smart contract function purchaseItem() that allows a consumer to pur
     assert.equal(resultBufferOne[0], sku, 'Error: Invalid item SKU')
     assert.equal(resultBufferOne[1], upc, 'Error: Invalid item UPC')
     assert.equal(resultBufferTwo[5], 9, 'Error: Invalid item State')
-    assert.equal(resultBufferTwo[8], consumerID, 'Error: Invalid consumerID')
-}) 
+   assert.equal(resultBufferTwo[8], consumerID, 'Error: Invalid consumerID')
+})  
 
 // 11th Test
 it("Testing smart contract function fetchItemBufferOne() that allows anyone to fetch item details from blockchain", async() => {
