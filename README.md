@@ -28,7 +28,7 @@ c)	Activity diagram: - An activity diagram is essentially a flowchart that shows
 ![Class Diagram](images/waterActivityDiag.png)
 
 d)	Sequence diagram: - It shows the Integration between objects in the sequence in which they take place.
-![Class Diagram](images/SequenceDiagram_Water.png)
+![Class Diagram](images/SequenceDiagram_water.png)
 
 ### Libraries (Truffle, Truffle-contract, Etherium):
 Etherium is the blockchain which records all executed codes as transactions and the ether is the cryptocurrency which fuels the Ethereum blockchain. Our SupplyChain smart contract is a piece of software containing all rules and regulations for negotiating the terms of a contract. It automatically verifies the contract and then executes the agreed upon terms. But the Ethereum blockchain helps it make decentralized. In order to host it in Ethereum blockchain we wrote the contract in Solidity.
