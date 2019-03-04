@@ -22,10 +22,13 @@ In our case we have 4 different actors – Supplier who is responsible for colle
 ![Class Diagram](images/ClassDiagram_Water.png)
 
 b)	State diagram: - Shows changes from one state to another and depicts the creation state and final states. The initial state is the water at the source and the final state is the packaged water that an end user or consumer buys for drinking. It is also used to show the events responsible for change in state. 
+![State Diagram](images/StateDiagram_Water.png)
 
 c)	Activity diagram: - An activity diagram is essentially a flowchart that shows activities performed by a system. It shows the flow of one activity to another in the system. This helps the system to maintain the same set of processes and behavior. Here the Supplier first disinfect the water, collect it, filter it and then adds for Sale. This is purchased by a distributor who ships it to Retailer. The end user ultimately purchases the water from retailer for consumption.
+![Class Diagram](images/waterActivityDiag.png)
 
 d)	Sequence diagram: - It shows the Integration between objects in the sequence in which they take place.
+![Class Diagram](images/SequenceDiagram_Water.png)
 
 ### Libraries (Truffle, Truffle-contract, Etherium):
 Etherium is the blockchain which records all executed codes as transactions and the ether is the cryptocurrency which fuels the Ethereum blockchain. Our SupplyChain smart contract is a piece of software containing all rules and regulations for negotiating the terms of a contract. It automatically verifies the contract and then executes the agreed upon terms. But the Ethereum blockchain helps it make decentralized. In order to host it in Ethereum blockchain we wrote the contract in Solidity.
