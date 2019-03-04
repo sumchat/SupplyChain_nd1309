@@ -19,6 +19,7 @@ Unified Modeling Language (UML) is used in this project to visualize the design 
 The different types of UML diagrams used in the project are discussed below:
 a)	Class Diagram – It is a structure diagram and shows the classes, relationships, interface and association between the different components of the system's classes, attributes, operations, and how the objects are connected. 
 In our case we have 4 different actors – Supplier who is responsible for collecting, filtering and packing of water at the source, Distributors who buys the water from the Supplier and ships to the Retailer. End users or Consumers purchase the water from the Retailer. Each of them has a separate address which are added in the system and used for validation and security feature. This is referred to as the Access Control. The access control contracts manage the various addresses and constraints for operations that can be executed only by specific roles. Then we have the Base class which inherits from the Access Control and contains the main functionality implemented in SupplyChain.sol file. The Core class manages the ownership.
+![Class Diagram](images/ClassDiagram_Water.png)
 
 b)	State diagram: - Shows changes from one state to another and depicts the creation state and final states. The initial state is the water at the source and the final state is the packaged water that an end user or consumer buys for drinking. It is also used to show the events responsible for change in state. 
 
